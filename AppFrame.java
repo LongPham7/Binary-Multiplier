@@ -1,13 +1,11 @@
-import java.awt.BorderLayout;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.*;
+import java.awt.event.*;
+import javax.swing.*;
 
-import javax.swing.JButton;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-import javax.swing.JTextField;
-
+/**
+ * This class creates a GUI where users can type in integers that they want to
+ * multiply. This serves as a view in the MVC architecture.
+ */
 public class AppFrame {
 
 	private JFrame frame;
@@ -20,7 +18,7 @@ public class AppFrame {
 	private JTextField field1;
 	private JTextField field2;
 	private JTextField field3;
-	
+
 	private Multiplier mul = new Multiplier(this);
 
 	public void activate() {
@@ -29,7 +27,7 @@ public class AppFrame {
 		panel2 = new JPanel();
 		panel3 = new JPanel();
 		button1 = new JButton("Multiply");
-		label1 = new JLabel("Enter two non-negative integers that you want to multiply.");
+		label1 = new JLabel("Enter two integers that you want to multiply.");
 		label2 = new JLabel("");
 		field1 = new JTextField(20);
 		field2 = new JTextField(20);
@@ -54,27 +52,27 @@ public class AppFrame {
 		frame.setSize(1000, 300);
 		frame.setVisible(true);
 	}
-	
+
 	// Accessors
-	
+
 	public String getField1() {
 		return field1.getText();
 	}
-	
+
 	public String getField2() {
 		return field2.getText();
 	}
-	
+
 	// Modifiers
-	
+
 	public void setLabel2(String s) {
-		label2.setText(s);;
+		label2.setText(s);
 	}
-	
+
 	public void setField3(String s) {
 		field3.setText(s);
 	}
-	
+
 	class button1Listener implements ActionListener {
 		public void actionPerformed(ActionEvent event) {
 			try {
