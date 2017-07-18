@@ -1,6 +1,10 @@
 import java.util.ArrayList;
 
 /**
+ * This class converts the two decimal integers given by users to binaries and
+ * multiplies these using their binary representation. Their product is also
+ * displayed in binary.
+ * 
  * Here 'true' denotes '1' and 'false' denotes '0'.
  */
 public class Multiplier {

@@ -49,7 +49,7 @@ public class AppFrame {
 		field3.setText("Result:");
 
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		frame.setSize(1000, 300);
+		frame.setSize(800, 200);
 		frame.setVisible(true);
 	}
 
